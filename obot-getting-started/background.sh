@@ -24,8 +24,18 @@ done
 
 while ! curl -sf http://localhost:8080/api/healthz > /dev/null 2>&1; do
   i=$(( (i+1) % 4 ))
-  printf "\r[%s] Waiting for Obot server...        " "${spin:$i:1}"
-  sleep 1
+  if docker logs obot 2>&1 | grep -q "Failed to connect to database"; then
+    printf "\r[!] Database connection error detected, restarting Obot...\n"
+    docker rm -f obot
+    docker run -d --name obot -p 8080:8080 \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -e OBOT_SERVER_ENABLE_AUTHENTICATION=true \
+      ghcr.io/obot-platform/obot:latest
+    sleep 3
+  else
+    printf "\r[%s] Waiting for Obot server...        " "${spin:$i:1}"
+    sleep 1
+  fi
 done
 
 printf "\r[✓] Obot is ready!                      \n"
