@@ -3,7 +3,8 @@
   "description": "Learn how to install and run Obot, the open-source MCP platform, using Docker.",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "background.sh"
     },
     "steps": [
       {
