@@ -17,6 +17,15 @@ Replace `<YOUR_API_KEY>` with your OpenAI API key. You can also use `ANTHROPIC_A
 
 Replace `<YOUR_BOOTSTRAP_TOKEN>` with a secret token of your choice. This token is used for the initial admin login before an auth provider is configured. If omitted, a token will be auto-generated and printed to the container logs.
 
+Or, click below to start Obot without an API key or bootstrap token (you can configure these later in the admin UI):
+
+```bash
+docker run -d --name obot -p 8080:8080 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -e OBOT_SERVER_ENABLE_AUTHENTICATION=true \
+  ghcr.io/obot-platform/obot:latest
+```{{execute}}
+
 ## Verify Obot is Running
 
 Check that the container started successfully:
