@@ -23,5 +23,6 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  }
+  },
+  "thumbnail": "thumbnail.svg"
 }
