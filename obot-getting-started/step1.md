@@ -8,10 +8,14 @@ Run the following command to pull and start the Obot container:
 docker run -d --name obot -p 8080:8080 \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -e OPENAI_API_KEY=<YOUR_API_KEY> \
+  -e OBOT_SERVER_ENABLE_AUTHENTICATION=true \
+  -e OBOT_BOOTSTRAP_TOKEN=<YOUR_BOOTSTRAP_TOKEN> \
   ghcr.io/obot-platform/obot:latest
 ```{{copy}}
 
 Replace `<YOUR_API_KEY>` with your OpenAI API key. You can also use `ANTHROPIC_API_KEY` if you prefer Anthropic models.
+
+Replace `<YOUR_BOOTSTRAP_TOKEN>` with a secret token of your choice. This token is used for the initial admin login before an auth provider is configured. If omitted, a token will be auto-generated and printed to the container logs.
 
 ## Verify Obot is Running
 
