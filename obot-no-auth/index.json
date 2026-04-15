@@ -1,6 +1,6 @@
 {
-  "title": "Getting Started with Obot (With Authentication)",
-  "description": "Learn how to install and run Obot, the open-source MCP platform, using Docker — with authentication enabled.",
+  "title": "Getting Started with Obot (No Authentication)",
+  "description": "Learn how to install and run Obot, the open-source MCP platform, using Docker — without authentication enabled.",
   "details": {
     "intro": {
       "text": "intro.md",
