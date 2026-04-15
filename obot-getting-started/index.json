@@ -9,12 +9,20 @@
     },
     "steps": [
       {
-        "title": "Install and Run Obot",
+        "title": "Obot is Starting",
         "text": "step1.md"
       },
       {
-        "title": "Access the Obot UI",
+        "title": "Log In to Obot",
         "text": "step2.md"
+      },
+      {
+        "title": "Configure Google Authentication",
+        "text": "step3.md"
+      },
+      {
+        "title": "Configure GitHub Authentication",
+        "text": "step4.md"
       }
     ],
     "finish": {

@@ -1,8 +1,8 @@
-# Access the Obot UI
+# Log In to Obot
 
 ## Retrieve Your Bootstrap Token
 
-If you did not specify an `OBOT_BOOTSTRAP_TOKEN`, Obot auto-generated one at startup. Run this command to retrieve it from the logs:
+Obot generated a bootstrap token at startup. Run the command below to retrieve it from the container logs:
 
 ```bash
 docker logs obot 2>&1 | grep -i "bootstrap"
@@ -10,10 +10,12 @@ docker logs obot 2>&1 | grep -i "bootstrap"
 
 Copy the token value — you will need it to log in.
 
-## Open the Obot UI
+## Open the Obot Admin UI
 
-Click the link below to open the Obot UI in your browser:
+Click the link below to open Obot in your browser:
 
 **[Open Obot]({{TRAFFIC_HOST1_8080}}/admin)**
 
-Log in using your bootstrap token. From here you can configure model providers, create agents, manage MCP servers, and start chatting.
+On the login page, click **Sign in with Bootstrap Token**, paste the token, and click **Login**.
+
+You will be taken to the Auth Providers page where you can configure an authentication provider in the next steps.
