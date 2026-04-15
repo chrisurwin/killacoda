@@ -14,6 +14,6 @@ Copy the token value — you will need it to log in.
 
 Click the link below to open the Obot UI in your browser:
 
-**[Open Obot](https://{{TRAFFIC_HOST1_8080}}/admin)**
+**[Open Obot]({{TRAFFIC_HOST1_8080}}/admin)**
 
 Log in using your bootstrap token. From here you can configure model providers, create agents, manage MCP servers, and start chatting.
