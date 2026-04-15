@@ -46,10 +46,3 @@ docker logs -f obot
 
 Wait until you see a line indicating the server is listening (e.g., `Listening on :8080`). Press `Ctrl+C` to stop following the logs.
 
-## Access the Obot UI
-
-Once Obot is running, open the UI at:
-
-**http://localhost:8080**
-
-From here you can configure model providers, create agents, manage MCP servers, and start chatting.

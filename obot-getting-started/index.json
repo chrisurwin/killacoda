@@ -9,6 +9,10 @@
       {
         "title": "Install and Run Obot",
         "text": "step1.md"
+      },
+      {
+        "title": "Access the Obot UI",
+        "text": "step2.md"
       }
     ],
     "finish": {
