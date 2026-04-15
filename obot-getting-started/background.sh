@@ -22,7 +22,7 @@ while ! docker ps --filter name=obot --filter status=running -q 2>/dev/null | gr
   sleep 1
 done
 
-while ! curl -sf http://localhost:8080/api/version > /dev/null 2>&1; do
+while ! curl -sf http://localhost:8080/api/healthz > /dev/null 2>&1; do
   i=$(( (i+1) % 4 ))
   printf "\r[%s] Waiting for Obot server...        " "${spin:$i:1}"
   sleep 1
