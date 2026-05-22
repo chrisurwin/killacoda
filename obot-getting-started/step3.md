@@ -1,3 +1,6 @@
+---
+video: https://academy.cudev.uk/Module_03_Authentication.mp4
+---
 # Configure Google Authentication
 
 This step walks you through setting up Google as an authentication provider for Obot.
