@@ -23,6 +23,22 @@
       {
         "title": "Configure GitHub Authentication",
         "text": "step4.md"
+      },
+      {
+        "title": "Add the GitHub MCP Server",
+        "text": "step5.md"
+      },
+      {
+        "title": "Connect Claude to Obot",
+        "text": "step6.md"
+      },
+      {
+        "title": "List Repos with Claude",
+        "text": "step7.md"
+      },
+      {
+        "title": "View the Audit Log",
+        "text": "step8.md"
       }
     ],
     "finish": {
